@@ -21,6 +21,13 @@ body {
     margin-top: 5%;
 
 }
+.icon{
+    height: 8,5%;
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 main {
     min-width: 600px;
     min-height: 500px;
@@ -52,17 +59,25 @@ textarea {
     max-width: 90%;
     max-height: 90%;
     margin: 5%;
-}
-/* .grid-container{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "ta"
-    "bt;"
-}
-textarea{
-    grid-area: ta;
+    margin-bottom: 2%;
+    font-family: 'Roboto', sans-serif;
+    resize: horizontal;
+    border-radius: 5px;
+    
 }
 #btn-submit{
-    grid-area: bt;
-}  */
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    border-radius: 5px;
+    padding: 1%;
+
+}
+#btn-submit:hover {
+    background: grey;
+    color: white;
+}
+
+
