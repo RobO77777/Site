@@ -14,22 +14,45 @@ body {
     text-shadow: 3px 3px 8px #00000075;
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
+    background-image: url("assets/swordportal.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 400px;
 }
+/* @media screen and (max-width: 600px) {
+    .logo {
+        margin-left: 20px;
+    }
+    
+}  */
 .logo {
     height: 80%;
     width: 80%;
     margin-top: 5%;
 
+
 }
-.icon{
-    height: 8,5%;
-    width: 10%;
+#icon{
+    height: 6,5%;
+    width: 8%;
     position: absolute;
     top: 0;
     left: 0;
 }
+#icon:hover {
+    border: 1px solid white;
+    border-radius: 8%;
+    cursor: pointer;
+
+}
+#menu {
+    text-align: left;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #f1f1f1;
+}
 main {
-    min-width: 600px;
     min-height: 500px;
     width: 90%;
     font-size: 1rem;
@@ -47,8 +70,15 @@ h1{
     border: 2px solid white;
     padding: 10px;
     margin: 10%;
+    min-width: 250px;
 
 
+}
+@media screen and (max-width: 600px) {
+    .flexbox {
+        margin-right: 10%;
+    }
+    
 }
 .flexbox li{
     list-style: none;
@@ -78,6 +108,9 @@ textarea {
 #btn-submit:hover {
     background: grey;
     color: white;
+}
+p {
+    margin: 5px;
 }
 
 

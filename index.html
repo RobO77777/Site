@@ -16,12 +16,16 @@
     <center>
         <header>
                 <img src="assets/logo.png" alt="Logo" class="logo">
-
+                
         </header>
+        
         <main>
             <div class="menu">
-                <img src="assets/iconemenu.png" alt="icone menu" class="icon">
+                <img input="summary" src="assets/iconemenu.png" alt="icone menu" class="menu" id="icon">
             </div>
+            
+            <div class="menu"></div>
+
             <div class="flexbox">
                 <h1>Home</h1>
                 <ul>
@@ -30,11 +34,40 @@
                     <li>Wiki</li>
                 </ul>
     
-    
-            
             <h1>Mods</h1>
-    
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Specificities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mod 1</td>
+                        <td>50 ko</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                    </tr>
+                    <tr>
+                        <td>Mod 2</td>
+                        <td>136 ko</td>
+                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+                    </tr>
+                    <tr>
+                        <td>Mod 3</td>
+                        <td>42 ko</td>
+                        <td>Lorem, ipsum dolor.</td>
+                    </tr>
+                    <tr>
+                        <td>Mod 4</td>
+                        <td>1.4 mo</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vel officia quia tempora.</td>
+                    </tr>
+                </tbody>
+            </table>
             <h1>Suggestions</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quo deleniti assumenda aliquam autem doloremque eum. Repellat quam cumque at perspiciatis. Quibusdam consectetur ex suscipit quos eligendi aliquam in sunt laborum veniam, maiores sapiente inventore rem itaque repellat minus, consequuntur cumque corrupti. Soluta neque cumque aperiam eaque earum, fugiat obcaecati.</p>
                 <div class="grid-container">
                     <sug action="" class="sug">
                         <textarea 
@@ -42,13 +75,14 @@
                         rows="10" 
                         placeholder="Suggestions"
                         id="suggestionsInput"></textarea>
-                        <input type="submit" value="Confirm" id="btn-submit">
+                        <input type="submit" 
+                        value="Confirm" 
+                        id="btn-submit">
                     </sug>
                 </div>
         </main>
     
     </center>
-
 
     <script>
         var confirmBtn = document.getElementById('btn-submit');
