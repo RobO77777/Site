@@ -3,6 +3,8 @@
 *{
     margin: 0;
     padding: 0;
+    align-items: center;
+
 }
 
 body {
@@ -20,6 +22,12 @@ body {
     background-size: cover;
     background-attachment: fixed;
     min-width: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
 }
 /* @media screen and (max-width: 600px) {
     .logo {
@@ -59,11 +67,11 @@ main {
     width: 90%;
     font-size: 1rem;
     /* center box  */
-    text-align: center;
+
 
 }
 h1{
-    text-align: center;
+
     margin : 10px;
 }
 .flexbox{
@@ -74,7 +82,6 @@ h1{
     padding: 10px;
     margin: 5%;
     min-width: 250px;
-
 }
 @media screen and (max-width: 600px) {
     .flexbox {
@@ -84,33 +91,8 @@ h1{
 }
 .flexbox li{
     list-style: none;
-    text-align: center;
-}
-/* textarea {
-    display: grid;
-    max-width: 90%;
-    max-height: 90%;
-    margin: 5%;
-    margin-bottom: 2%;
-    font-family: 'Roboto', sans-serif;
-    resize: horizontal;
-    border-radius: 5px;
-    
-} */
-/* #btn-submit{
-    cursor: pointer;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    margin-left: 10%;
-    border-radius: 5px;
-    padding: 1%;
 
 }
-#btn-submit:hover {
-    background: grey;
-    color: white;
-} */
 p {
     margin: 5px;
 }
@@ -145,10 +127,19 @@ table {
     margin-bottom: 15%;
 
   }
-  #cercle {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background: purple;
+.flexbox.network {
+    display: flex;
+    padding-top: -10px;
+    overflow: hidden;
+
 }
+.network img {
+    margin-right: 10px;
+    transform: translateY(50%);
+    margin: 5px;
+    
+
+
+}
+
 
