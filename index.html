@@ -1,89 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- titre -->
     <title>Aetheria Mods Reborn</title>
     <!-- fichier style  -->
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <!-- Icone site -->
-    <link rel="shortcut icon" href="assets/icon.png">
-</head>
+    <link rel="shortcut icon" href="assets/icon.png" />
+  </head>
 
-<body>
+  <body>
     <center>
-        <header>
-                <img src="assets/logo.png" alt="Logo" class="logo">
-                
-        </header>
-        
-        <main>
-            <div class="menu">
-                <img input="summary" src="assets/iconemenu.png" alt="icone menu" class="menu" id="icon">
-            </div>
-            
-            <div class="flexbox">
-                <h1>Home</h1>
-                <ul>
-                    <li>Target</li>
-                    <li>Contributing</li>
-                    <li>Suggestions</li>
-                </ul>
-    
-            <h1>Contributing</h1>
-                <a href="modpage.html">All Mods</a>
-            <h1>Suggestions</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quo deleniti assumenda aliquam autem doloremque eum. Repellat quam cumque at perspiciatis. Quibusdam consectetur ex suscipit quos eligendi aliquam in sunt laborum veniam, maiores sapiente inventore rem itaque repellat minus, consequuntur cumque corrupti. Soluta neque cumque aperiam eaque earum, fugiat obcaecati.</p>
-                <div class="grid-container">
-                    <sug action="" class="sug">
-                        <textarea 
-                        cols="30" 
-                        rows="10" 
-                        placeholder="Suggestions"
-                        id="suggestionsInput"></textarea>
-                        <input type="submit" 
-                        value="Confirm" 
-                        id="btn-submit">
-                    </sug>
-                </div>
-        </main>
-    
+      <header>
+        <img src="assets/logo.png" alt="Logo" class="logo" />
+      </header>
+      <main>
+        <div class="menu">
+          <img
+            input="summary"
+            src="assets/iconemenu.png"
+            alt="icone menu"
+            class="menu"
+            id="icon"
+          />
+        </div>
+        <div class="flexbox">
+          <h1>Home</h1>
+          <ul>
+            <li>Target</li>
+            <li>Contributing</li>
+            <li>Suggestions</li>
+          </ul>
+
+          <h1>Contributing</h1>
+          <a href="modpage.html"
+            ><span>&#9758;</span>All Mods<span>&#9756;</span></a
+          >
+          <br />
+          <video src="vid.mp4" height="150" autoplay loop muted></video>
+          <h1>Suggestions</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            quo deleniti assumenda aliquam autem doloremque eum. Repellat quam
+            cumque at perspiciatis. Quibusdam consectetur ex suscipit quos
+            eligendi aliquam in sunt laborum veniam, maiores sapiente inventore
+            rem itaque repellat minus, consequuntur cumque corrupti. Soluta
+            neque cumque aperiam eaque earum, fugiat obcaecati.
+          </p>
+          <div class="grid-container">
+            <form action="traitement.php" method="post">
+              <sug action="" class="sug">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder="Suggestions"
+                  id="suggestionsInput"
+                  name="monTextarea"
+                ></textarea>
+                <input type="submit" value="Confirm" id="btn-submit" />
+              </sug>
+            </form>
+          </div>
+        </div>
+      </main>
     </center>
-
-    <script>
-        var confirmBtn = document.getElementById('btn-submit');
-        var suggestionsInput = document.getElementById('suggestionsInput');
-      
-        confirmBtn.addEventListener('click', function() {
-          var suggestionsText = suggestionsInput.value;
-      
-          // Appel de la fonction pour enregistrer le texte dans un fichier
-          saveTextToFile(suggestionsText);
-          
-          suggestionsInput.value = '';
-        });
-      
-        function saveTextToFile(text) {
-          // Création d'un objet Blob avec le texte
-          var blob = new Blob([text], { type: 'text/plain' });
-      
-          // Création d'une URL de l'objet Blob
-          var url = URL.createObjectURL(blob);
-      
-          // Création d'un lien de téléchargement
-          var link = document.createElement('a');
-          link.href = url;
-          link.download = 'suggestions.txt';
-      
-          // Clic automatique sur le lien pour déclencher le téléchargement
-          link.click();
-      
-          // Libération de l'URL de l'objet Blob
-          URL.revokeObjectURL(url);
-        }
-      </script>
-</body>
-
+  </body>
 </html>
