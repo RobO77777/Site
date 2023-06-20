@@ -17,6 +17,7 @@ body {
     background-image: url("assets/swordportal.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     background-attachment: fixed;
     min-width: auto;
 }
@@ -71,7 +72,7 @@ h1{
     padding: 5%;
     border: 2px solid white;
     padding: 10px;
-    margin: 10%;
+    margin: 5%;
     min-width: 250px;
 
 }
@@ -148,6 +149,6 @@ table {
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background: green;
+    background: purple;
 }
 
