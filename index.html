@@ -53,7 +53,6 @@
           <div class="grid-container">
             <form action="traitement.php" method="post">
               <sug action="" class="sug">
-                <input type="email" name="expediteur" placeholder="Votre adresse e-mail" required>
                 <textarea
                   cols="30"
                   rows="10"
@@ -65,19 +64,6 @@
               </sug>
             </form>
           </div>
-          <script>
-            document.querySelector('form').addEventListener('submit', function(event) {
-              event.preventDefault(); // Empêche le formulaire de se soumettre normalement
-          
-              var textareaContent = document.getElementById('suggestionsInput').value;
-          
-              // Envoie la requête POST au serveur avec le contenu de la textarea
-              var xhr = new XMLHttpRequest();
-              xhr.open('POST', 'envoyer_email.php', true);
-              xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-              xhr.send('message=' + encodeURIComponent(textareaContent));
-            });
-          </script>
         </div>
       </main>
     </center>
