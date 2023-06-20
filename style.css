@@ -85,7 +85,7 @@ h1{
     list-style: none;
     text-align: center;
 }
-textarea {
+/* textarea {
     display: grid;
     max-width: 90%;
     max-height: 90%;
@@ -95,8 +95,8 @@ textarea {
     resize: horizontal;
     border-radius: 5px;
     
-}
-#btn-submit{
+} */
+/* #btn-submit{
     cursor: pointer;
     font-size: 20px;
     display: flex;
@@ -109,7 +109,7 @@ textarea {
 #btn-submit:hover {
     background: grey;
     color: white;
-}
+} */
 p {
     margin: 5px;
 }
@@ -120,5 +120,34 @@ a {
 table {
     margin: auto;
 
+}
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Masquer le menu déroulant en le déplaçant hors de l'écran */
+    width: 200px;
+    height: 100%;
+    background-color: rgba(40, 40, 40);;
+    transition: left 0.3s ease;
+
+  }
+  
+  #sidebar.open {
+    left: 0; /* Afficher le menu déroulant en le ramenant à sa position initiale */
+  }
+  #sidebar h1 {
+    text-decoration: underline;
+    margin: 10%;
+    margin-bottom: 20%;
+  }
+  #sidebar h2 {
+    margin-bottom: 15%;
+
+  }
+  #cercle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: green;
 }
 
