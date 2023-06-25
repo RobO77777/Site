@@ -29,12 +29,11 @@ body {
     text-align: center;
 
 }
-/* @media screen and (max-width: 600px) {
-    .logo {
-        margin-left: 20px;
-    }
-    
-}  */
+main {
+    min-height: 500px;
+    width: 90%;
+    font-size: 1rem;
+}
 .logo {
     height: 80%;
     width: 80%;
@@ -62,18 +61,8 @@ body {
     height: 100%;
     background-color: #f1f1f1;
 }
-main {
-    min-height: 500px;
-    width: 90%;
-    font-size: 1rem;
-    /* center box  */
 
 
-}
-h1{
-
-    margin : 10px;
-}
 .flexbox{
     background: rgba(40, 40, 40, 0.9);;
     border-radius: 20px;
@@ -91,17 +80,6 @@ h1{
 }
 .flexbox li{
     list-style: none;
-
-}
-p {
-    margin: 5px;
-}
-a {
-    text-decoration: none;
-    color: white; /*par exemple*/
-   }
-table {
-    margin: auto;
 
 }
 #sidebar {
@@ -136,3 +114,33 @@ table {
     margin: 5px;
     margin-bottom: 20px;
 }
+h1{
+
+    margin : 10px;
+}
+
+p {
+    padding: 5%;
+    line-height: 1.5;
+    font-size: 1.7rem;
+
+}
+a {
+    text-decoration: none;
+    color: white; /*par exemple*/
+   }
+table {
+    margin: auto;
+
+}
+#orb {
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
